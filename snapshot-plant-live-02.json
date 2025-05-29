@@ -1,13 +1,13 @@
 {
-    "id": "zvNjNx9kJR",
-    "name": "Deploy Snapshot - 2025-05-29 14:15:59",
+    "id": "bPwrdEjvVM",
+    "name": "Deploy Snapshot - 2025-05-29 14:18:07",
     "description": "Snapshot created for pipeline deployment from s1 to d1 as part of pipeline p1",
-    "createdAt": "2025-05-29T14:15:59.923Z",
-    "updatedAt": "2025-05-29T14:15:59.923Z",
+    "createdAt": "2025-05-29T14:18:07.478Z",
+    "updatedAt": "2025-05-29T14:18:07.478Z",
     "flows": {
         "flows": [],
         "credentials": {
-            "$": "79c43515cfe7b1372afdcfc30ec477ebCTI="
+            "$": "f3de66775301e0a753dff6e53eaadc8bMTk="
         }
     },
     "settings": {
