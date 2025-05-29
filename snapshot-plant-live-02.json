@@ -1,0 +1,61 @@
+{
+    "id": "WemjDOrB8P",
+    "name": "Deploy Snapshot - 2025-05-29 14:20:34",
+    "description": "Snapshot created for pipeline deployment from s1 to d1 as part of pipeline p1",
+    "createdAt": "2025-05-29T14:20:34.781Z",
+    "updatedAt": "2025-05-29T14:20:34.781Z",
+    "flows": {
+        "flows": [],
+        "credentials": {
+            "$": "dc51bea96667f90a409fcdce2d22bf3cS4s="
+        }
+    },
+    "settings": {
+        "settings": {
+            "disableEditor": false,
+            "disableTours": false,
+            "codeEditor": "monaco",
+            "theme": "forge-light",
+            "page": {
+                "title": "FlowFuse",
+                "favicon": ""
+            },
+            "header": {
+                "title": "plant-live-02",
+                "url": ""
+            },
+            "timeZone": "UTC",
+            "palette": {
+                "allowInstall": true,
+                "catalogue": [
+                    "https://catalogue.nodered.org/catalogue.json"
+                ],
+                "npmrc": "",
+                "modules": {}
+            },
+            "modules": {
+                "allowInstall": true,
+                "denyList": ""
+            },
+            "httpNodeAuth": {
+                "type": "",
+                "user": "",
+                "pass": ""
+            },
+            "emailAlerts": {
+                "crash": false,
+                "safe": false,
+                "recipients": "owners",
+                "resource": {
+                    "cpu": true,
+                    "memory": true
+                }
+            },
+            "httpAdminRoot": "",
+            "dashboardUI": "/ui"
+        },
+        "env": {},
+        "modules": {}
+    },
+    "ownerType": "instance"
+}
