@@ -1,0 +1,191 @@
+{
+    "id": "paVY2g9Rom",
+    "name": "Deploy Snapshot - 2025-05-30 10:55:47",
+    "description": "Snapshot created for pipeline deployment from d1 to gh as part of pipeline p1",
+    "createdAt": "2025-05-30T10:55:47.178Z",
+    "updatedAt": "2025-05-30T10:55:47.178Z",
+    "flows": {
+        "flows": [
+            {
+                "id": "50598ffc7c3da831",
+                "type": "tab",
+                "label": "Flow 1",
+                "disabled": false,
+                "info": "",
+                "env": []
+            },
+            {
+                "id": "17d8f7ff3a092ee8",
+                "type": "inject",
+                "z": "50598ffc7c3da831",
+                "name": "",
+                "props": [
+                    {
+                        "p": "payload"
+                    },
+                    {
+                        "p": "topic",
+                        "vt": "str"
+                    }
+                ],
+                "repeat": "",
+                "crontab": "",
+                "once": false,
+                "onceDelay": 0.1,
+                "topic": "",
+                "payload": "",
+                "payloadType": "date",
+                "x": 450,
+                "y": 180,
+                "wires": [
+                    [
+                        "898ecf452b306344"
+                    ]
+                ]
+            },
+            {
+                "id": "898ecf452b306344",
+                "type": "http request",
+                "z": "50598ffc7c3da831",
+                "name": "",
+                "method": "GET",
+                "ret": "txt",
+                "paytoqs": "ignore",
+                "url": "https://vast-jay-1124.flowfuse.dev/test",
+                "tls": "",
+                "persist": false,
+                "proxy": "",
+                "insecureHTTPParser": false,
+                "authType": "basic",
+                "senderr": false,
+                "headers": [],
+                "x": 650,
+                "y": 180,
+                "wires": [
+                    [
+                        "d2533db40f67fa44"
+                    ]
+                ]
+            },
+            {
+                "id": "ce4aebe65f57c254",
+                "type": "http in",
+                "z": "50598ffc7c3da831",
+                "name": "",
+                "url": "/test",
+                "method": "get",
+                "upload": false,
+                "swaggerDoc": "",
+                "x": 430,
+                "y": 260,
+                "wires": [
+                    [
+                        "537d8c54e88d95a3"
+                    ]
+                ]
+            },
+            {
+                "id": "537d8c54e88d95a3",
+                "type": "function",
+                "z": "50598ffc7c3da831",
+                "name": "function 1",
+                "func": "\nreturn msg;",
+                "outputs": 1,
+                "timeout": 0,
+                "noerr": 0,
+                "initialize": "",
+                "finalize": "",
+                "libs": [],
+                "x": 610,
+                "y": 260,
+                "wires": [
+                    [
+                        "e9f04e43e1a51f1f"
+                    ]
+                ]
+            },
+            {
+                "id": "e9f04e43e1a51f1f",
+                "type": "http response",
+                "z": "50598ffc7c3da831",
+                "name": "",
+                "statusCode": "",
+                "headers": {},
+                "x": 870,
+                "y": 260,
+                "wires": []
+            },
+            {
+                "id": "d2533db40f67fa44",
+                "type": "debug",
+                "z": "50598ffc7c3da831",
+                "name": "debug 1",
+                "active": true,
+                "tosidebar": true,
+                "console": false,
+                "tostatus": false,
+                "complete": "false",
+                "statusVal": "",
+                "statusType": "auto",
+                "x": 880,
+                "y": 180,
+                "wires": []
+            }
+        ],
+        "credentials": {
+            "$": "e0cbf3369d2ccfd422b77bd9a446b71fWpd3DfKN7xbYvesGwPDmzLiBzyuey210LiA4I7SKkFMlhFWdO5nNjOOaKpTnbrHTn2VHdehH"
+        }
+    },
+    "settings": {
+        "settings": {
+            "disableEditor": false,
+            "disableTours": false,
+            "codeEditor": "monaco",
+            "theme": "forge-light",
+            "page": {
+                "title": "FlowFuse",
+                "favicon": ""
+            },
+            "header": {
+                "title": "vast-jay-1124",
+                "url": ""
+            },
+            "timeZone": "UTC",
+            "palette": {
+                "allowInstall": true,
+                "catalogue": [
+                    "https://catalogue.nodered.org/catalogue.json"
+                ],
+                "npmrc": "",
+                "modules": {}
+            },
+            "modules": {
+                "allowInstall": true,
+                "denyList": ""
+            },
+            "httpNodeAuth": {
+                "type": "basic",
+                "user": "test",
+                "pass": "$2b$10$YpSOknPkX3qOjB5QMtvO9eHnhfLHuWcpVaG0odh10RuA/MdxfEz3i"
+            },
+            "emailAlerts": {
+                "crash": false,
+                "safe": false,
+                "recipients": "owners",
+                "resource": {
+                    "cpu": true,
+                    "memory": true
+                }
+            },
+            "httpAdminRoot": "",
+            "dashboardUI": "/ui"
+        },
+        "env": {},
+        "modules": {
+            "node-red": "4.0.9",
+            "@flowfuse/nr-project-nodes": "0.7.4",
+            "@flowfuse/nr-file-nodes": "0.0.8"
+        }
+    },
+    "ownerType": "instance"
+}
